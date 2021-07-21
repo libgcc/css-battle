@@ -1,0 +1,62 @@
+
+  <div class="row">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="a"></div>
+  </div>
+  <div class="base"></div>
+  <div class="handle"></div>
+<style>
+  body {
+  background-color:#6592CF;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.row, .base, .handle {
+  width: 150px;
+  margin: 0 auto;
+  background-color: #060F55;
+  display: flex;
+  align-items: stretch;
+}
+
+.row {
+  height: 100px;
+  background-color:#6592CF;
+}
+.base {
+  height: 100px;
+  z-index: -1;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+.row div.a , .row div.b {
+  display: inline-block;
+  height: 100px;
+  width: 30px;
+}
+
+.row div.a {
+  background-color: #060F55;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.row div.b {
+  background-color:#6592CF;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  transform: translate(0, 30px);
+}
+
+.handle {
+  width: 20px;
+  height: 60px;
+  transform: translate(0, -10px);
+}
+</style>

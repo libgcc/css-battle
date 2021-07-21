@@ -1,0 +1,46 @@
+
+  <div class="base">
+    <div class="a"></div>
+  </div>
+<style>
+  body {
+    margin: 0;
+  background-color:#222730;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.base {
+  height: 150px;
+  width: 100%;
+  background-color: #4CAAB3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.base .a {
+  background-color: #4CAAB3;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border: solid #222730 50px ;
+  transform: rotate(45deg);
+    background-clip: padding-box;
+  position: relative;
+}
+
+.a::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #393E46;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
