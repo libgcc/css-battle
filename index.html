@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+html {
+    background-color: white;
+}
+body {
+  width: 400px;
+  height: 300px;
+  margin: 0;
+}
+</style>
+<body>
+
+  <div></div>
+<style>
+body {
+  margin: 0;
+  background-color:#62306D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div{
+  height: 100px;
+  width: 200px;
+  background-color: #F7EC7D;
+  clip-path: path("M 0 20 A 20 20 0 0 0 20 0 H 130 A 10 10 0 0 0 150 0 H 180  A 20 20 0 0 0 200 20 V 80 A 20 20 0 0 0 180 100 H 150 A 10 10 0 0 0 130 100 H 20 A 20 20 0 0 0 0 80 Z");
+  position: relative;
+}
+div::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  right: 0;
+  background-color: #E38F66;
+}
+
+</style>
+</body>
+</html>
